@@ -12,5 +12,5 @@ if ! test -f /conf/access.log; then
   touch /conf/access.log
 fi
 
-# 👉 Starte VROOM direkt (nicht npm/express)
-vroom -c /conf/config.yml --bind 0.0.0.0
+cd /vroom-express && exec npm start
+
