@@ -1,5 +1,6 @@
-router: osrm
-servers:
-  - host: osrm-backend-834z.onrender.com
-    port: 443
-    use_https: true
+routingServers:
+  osrm:
+    car:
+      host: osrm-backend-834z.onrender.com
+      port: 443
+      use_https: true
