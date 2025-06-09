@@ -12,5 +12,4 @@ if ! test -f /conf/access.log; then
   touch /conf/access.log
 fi
 
-cd /vroom-express && exec npm start
-
+cd /vroom-express && CONFIG_FILE=/vroom-express/config.yml exec npm start
